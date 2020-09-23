@@ -16,7 +16,8 @@ public class Player : MonoBehaviour
     private int _currentAmmo;
     private int _maxAmmo = 50;
     private bool _isReload = false;
-    
+    public bool _hasCoins = false;
+
     private AudioSource _audioSource;
 
     private UIManager _uiManager;
@@ -47,7 +48,7 @@ public class Player : MonoBehaviour
             Debug.Log("UIManager is Null");
         }
     }
-    
+
     private void FixedUpdate()
     {
         CalculateMovement();
@@ -101,6 +102,11 @@ public class Player : MonoBehaviour
             GameObject hitMarkers = Instantiate(_hitMarkerPrefab, hit.point, Quaternion.LookRotation(hit.normal)) as GameObject;
             Destroy(hitMarkers, 1.0f);
         }    
+    }
+    
+    public void UpdateCoin()
+    {
+        _hasCoins = true;
     }
 
     IEnumerator ReloadRoutine()
