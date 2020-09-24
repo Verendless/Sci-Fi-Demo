@@ -5,10 +5,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09b564fd-9763-42df-b511-8ea6a2ddbe09" name="Default Changelist" comment="">
+    <list default="true" id="09b564fd-9763-42df-b511-8ea6a2ddbe09" name="Default Changelist" comment="Add Collectible">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sci-Fi Demo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sci-Fi Demo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Sci-Fi Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sci-Fi Demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Coin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
     </list>
@@ -22,6 +23,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseY.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D1422B3F-C937-4601-8C92-EDA852993B93/db/f4d989e2/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,9 +35,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseX.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MouseLook.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop.cs" />
       </list>
     </option>
   </component>
@@ -88,8 +91,24 @@
       <workItem from="1600610160990" duration="2716000" />
       <workItem from="1600692784521" duration="3317000" />
       <workItem from="1600702024884" duration="3843000" />
-      <workItem from="1600871504188" duration="4527000" />
+      <workItem from="1600871504188" duration="5302000" />
+      <workItem from="1600960456626" duration="2889000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Collectible">
+      <created>1600876181627</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600876181627</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Collectible">
+      <created>1600876242483</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600876242483</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +130,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add Collectible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Collectible" />
   </component>
   <component name="WindowStateProjectService">
     <state x="536" y="170" key="#Inspection_severity" timestamp="1600704830074">
@@ -121,5 +142,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1600149523137" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1600962389842">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600962389842" />
   </component>
 </project>

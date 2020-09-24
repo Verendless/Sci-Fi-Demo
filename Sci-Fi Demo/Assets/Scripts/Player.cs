@@ -13,9 +13,11 @@ public class Player : MonoBehaviour
     
     [SerializeField] private GameObject _muzzleFlash;
     [SerializeField] private GameObject _hitMarkerPrefab;
+    [SerializeField] private GameObject _weapon;
     private int _currentAmmo;
     private int _maxAmmo = 50;
     private bool _isReload = false;
+    public bool _hasWeapon = false;
     public bool _hasCoins = false;
 
     private AudioSource _audioSource;
@@ -34,7 +36,7 @@ public class Player : MonoBehaviour
             Debug.LogError("Character Controller is Null");
         }
 
-        _audioSource = GetComponentInChildren<AudioSource>();
+        _audioSource = GetComponent<AudioSource>();
         if (_audioSource == null)
         {
             Debug.LogError("Audio Source is Null");
@@ -53,7 +55,7 @@ public class Player : MonoBehaviour
     {
         CalculateMovement();
         
-        if (Input.GetMouseButton(0) && _currentAmmo > 0 && _isReload == false)
+        if (Input.GetMouseButton(0) && _currentAmmo > 0 && _isReload == false && _hasWeapon == true)
         {
             Shoot();
         }
@@ -103,12 +105,12 @@ public class Player : MonoBehaviour
             Destroy(hitMarkers, 1.0f);
         }    
     }
-    
-    public void UpdateCoin()
-    {
-        _hasCoins = true;
-    }
 
+    public void DisplayWeapon()
+    {
+        _weapon.SetActive(true);
+    }
+    
     IEnumerator ReloadRoutine()
     {
         _isReload = true;

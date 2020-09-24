@@ -20,6 +20,11 @@ public class Coin : MonoBehaviour
         {
             _pickupCoinKey = true;
         }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            _pickupCoinKey = false;
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -29,8 +34,9 @@ public class Coin : MonoBehaviour
             Player player = other.GetComponent<Player>();
             if (player != null)
             {
-                player.UpdateCoin();
+                player._hasCoins = true;
                 _uiManager.HidePickupCoinsText();
+                _uiManager.DisplayCoinImage();
                 AudioSource.PlayClipAtPoint(_pickupCoinSound, transform.position, 1.0f);
                 Destroy(this.gameObject);                
             }
