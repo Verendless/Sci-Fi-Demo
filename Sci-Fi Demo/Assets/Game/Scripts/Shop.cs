@@ -33,23 +33,34 @@ public class Shop : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Player player = other.GetComponent<Player>();
-            if (player != null)
+            if (_eKeyIsPressed == true)
             {
-                if (player._hasCoins == true && _eKeyIsPressed == true)
+                Player player = other.GetComponent<Player>();
+                if (player != null)
                 {
-                    player.DisplayWeapon();
-                    _uiManager.HideCoinImange();
-                    player._hasCoins = false;
-                    player._hasWeapon = true;
-                    AudioSource.PlayClipAtPoint(_winSound, Camera.main.transform.position, 1);
-                }
-                else if (player._hasCoins == false && _eKeyIsPressed == true)
-                {
-                    _uiManager.HideShopText();
-                    _uiManager.DisplayDontHaveCoinText();
-                }
+                    if (player._hasCoins == true)
+                    {
+                        player.DisplayWeapon();
+                        if (_uiManager != null)
+                        {
+                            _uiManager.HideCoinImange();  
+                        }
+                        player._hasCoins = false;
+                        player._hasWeapon = true;
+                        AudioSource.PlayClipAtPoint(_winSound, Camera.main.transform.position, 1);
+                    }
+                    else
+                    {
+                        if (_uiManager != null)
+                        {
+                            _uiManager.HideShopText();
+                            _uiManager.DisplayDontHaveCoinText();
+                        }
+                    
+                    }
+                }   
             }
+
         }
     }
 

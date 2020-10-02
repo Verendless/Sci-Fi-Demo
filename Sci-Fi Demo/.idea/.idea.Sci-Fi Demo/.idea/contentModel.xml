@@ -141,6 +141,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Coin.cs" t="Include" />
+          <e p="Destructible.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="MouseLook.cs" t="Include" />
           <e p="MouseX.cs" t="Include" />

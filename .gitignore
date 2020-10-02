@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.xml
+Sci-Fi Demo/.idea/.idea.Sci-Fi Demo/.idea/workspace.xml

@@ -103,6 +103,11 @@ public class Player : MonoBehaviour
             Debug.Log("Hit: " + hit.transform.name);
             GameObject hitMarkers = Instantiate(_hitMarkerPrefab, hit.point, Quaternion.LookRotation(hit.normal)) as GameObject;
             Destroy(hitMarkers, 1.0f);
+            Destructible create = hit.transform.GetComponent<Destructible>();
+            if (create != null)
+            {
+                create.DestroyCrate();
+            }
         }    
     }
 
